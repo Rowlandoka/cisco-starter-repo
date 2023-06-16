@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class AddressDisplay extends Component {
+class IPAddressDisplay extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -16,8 +16,8 @@ class AddressDisplay extends Component {
   }
 
   render() {
-    return <span className="AddressDisplay">{this.state.ipAddress}</span>;
+    return <span className="IPAddressDisplay">{this.state.ipAddress}</span>;
   }
 }
 
-export default AddressDisplay;
+export default IPAddressDisplay;
