@@ -3,6 +3,7 @@ import "./App.css";
 import Banner from "./Banner";
 import Exhibit from "./Exhibit";
 import IPAddressDisplay from "./IPAddressDisplay";
+import NetLatency from "./NetLatency";
 
 class App extends Component {
   render() {
@@ -14,6 +15,9 @@ class App extends Component {
         </Exhibit>
         <Exhibit name="Public IPv6 Address">
           <IPAddressDisplay url="https://api64.ipify.org?format=json" />
+        </Exhibit>
+        <Exhibit name="Network Packet Latency">
+          <NetLatency />
         </Exhibit>
       </div>
     );
